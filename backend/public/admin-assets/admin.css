@@ -1,0 +1,46 @@
+/* Admin extras on top of Sneat */
+.login-bg{background:radial-gradient(1200px 600px at 10% -10%,#e9e9ff 0,transparent 60%),radial-gradient(900px 500px at 100% 110%,#ffe9e0 0,transparent 55%),#f5f5f9;min-height:100vh}
+.login-card{max-width:420px}
+.hero-card{background:linear-gradient(135deg,#696cff,#8b5cf6 55%,#ff6a3d);border:0;overflow:hidden;position:relative}
+.hero-rocket{font-size:96px;color:#ffffff40;animation:floaty 4s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-12px) rotate(-6deg)}}
+.stat-card{transition:transform .35s cubic-bezier(.2,1.3,.4,1),box-shadow .35s;display:block}
+.stat-card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(105,108,255,.25)}
+.page-anim{animation:pageIn .55s cubic-bezier(.2,.8,.2,1)}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}}
+.thumb{width:56px;height:40px;object-fit:cover;display:inline-flex;align-items:center;justify-content:center}
+.thumb-empty{background:#f0f0f5;color:#a1acb8;font-size:20px}
+.swatch{display:inline-block;width:28px;height:28px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 0 0 4px #d9dee3}
+.menu-item .menu-link{transition:padding .25s}.menu-item:not(.active) .menu-link:hover{padding-left:1.7rem}
+.menu-icon{transition:transform .35s}.menu-item .menu-link:hover .menu-icon{transform:scale(1.25) rotate(-8deg)}
+.sticky-bar{position:sticky;top:76px;z-index:20;padding:10px 14px;margin:-10px -14px 18px;border-radius:12px;backdrop-filter:blur(10px);background:rgba(245,245,249,.85)}
+/* upload boxes */
+.upload-box{display:flex;gap:14px;align-items:flex-start}
+.preview-wrap{flex:none;width:150px}
+.preview{width:150px;height:96px;object-fit:cover;border-radius:10px;border:1px solid #d9dee3;background:#f5f5f9;display:block}
+.preview.empty{display:grid;place-items:center;color:#a1acb8;font-size:30px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.gal-item{border:1px solid #e4e6ef;border-radius:10px;padding:8px;background:#fff;transition:transform .25s}.gal-item:hover{transform:translateY(-3px)}
+.gal-item img{width:100%;height:92px;object-fit:cover;border-radius:6px}
+/* live search */
+.live-search .live-box{display:none;position:absolute;top:calc(100% + 10px);left:0;right:0;background:#fff;border-radius:12px;border:1px solid #e4e6ef;max-height:70vh;overflow:auto;z-index:1500}
+.live-search .live-box.open{display:block}
+.live-item{display:flex;align-items:center;gap:12px;padding:10px 14px;color:#566a7f;border-bottom:1px solid #f1f1f6}
+.live-item:last-child{border:0}
+.live-item .ico{flex:none;width:34px;height:34px;border-radius:9px;background:#ededff;color:#696cff;display:grid;place-items:center;font-size:18px}
+.live-item .txt{flex:1;min-width:0;display:flex;flex-direction:column}.live-item .txt b{font-weight:600;color:#364152;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.live-item .txt small{color:#8592a3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-item .tp{flex:none;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:#696cff;background:#ededff;padding:2px 8px;border-radius:20px}
+.live-item img{flex:none;width:64px;height:44px;object-fit:cover;border-radius:8px}
+.live-item.on,.live-item:hover{background:#f5f5ff}
+.live-empty{padding:18px;color:#8592a3;text-align:center}
+/* media */
+.media-card{overflow:hidden;transition:transform .3s}.media-card:hover{transform:translateY(-4px)}
+.media-thumb{position:relative;aspect-ratio:4/3;background:#f0f0f5;display:grid;place-items:center;overflow:hidden}
+.media-thumb img,.media-thumb video{width:100%;height:100%;object-fit:cover}.media-thumb .play{position:absolute;font-size:38px;color:#fff;text-shadow:0 2px 8px #0008}
+.dropzone-lite{border:2px dashed #c9cdf5;border-radius:14px;padding:26px;text-align:center;background:#fafaff;transition:.3s}.dropzone-lite:hover{background:#f0f0ff;border-color:#696cff}
+.msg-body{white-space:pre-wrap;line-height:1.8;font-size:1.05rem;border-left:4px solid #696cff;padding-left:18px}
+.tox-tinymce{border-radius:10px!important;border-color:#d9dee3!important}
+#toasts .toast{animation:toastIn .5s cubic-bezier(.2,1.4,.4,1)}@keyframes toastIn{from{transform:translateX(60px);opacity:0}}
+.picker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;max-height:60vh;overflow:auto}
+.picker-grid button{border:2px solid transparent;padding:0;border-radius:10px;overflow:hidden;background:#f5f5f9;aspect-ratio:4/3}.picker-grid button:hover{border-color:#696cff}
+.picker-grid img,.picker-grid video{width:100%;height:100%;object-fit:cover}

@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Portfolio API</title><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:system-ui,sans-serif;background:#0b0b0e;color:#eee;display:grid;place-items:center;min-height:100vh;margin:0}.c{max-width:520px;padding:32px;border:1px solid #ffffff22;border-radius:18px}a{color:#ff6a3d}code{background:#ffffff14;padding:2px 6px;border-radius:6px}</style></head>
+<body><div class="c"><h1>Portfolio backend is running ✅</h1><p>Admin dashboard: <a href="{{ route('admin.login') }}">/admin</a></p><p>Public API: <a href="/api/bootstrap">/api/bootstrap</a>, <code>/api/projects</code>, <code>/api/posts</code>, <code>/api/search?q=</code></p></div></body></html>
